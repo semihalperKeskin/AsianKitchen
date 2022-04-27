@@ -115,8 +115,9 @@ function koreaFunction()
 {
   let allMenu =""
   menu.forEach(item =>{
+    if(item.category == "Korea")
+    { allMenu += createObj(item)}
     
-    allMenu += createObj(item)
   })
   menuCardDOM.innerHTML = allMenu
 }
@@ -125,8 +126,8 @@ function japanFunction()
 {
   let allMenu =""
   menu.forEach(item =>{
-    
-    allMenu += createObj(item)
+    if(item.category == "Japan")
+    { allMenu += createObj(item)}
   })
   menuCardDOM.innerHTML = allMenu
 }
@@ -135,8 +136,8 @@ function chinaFunction()
 {
   let allMenu =""
   menu.forEach(item =>{
-    
-    allMenu += createObj(item)
+    if(item.category == "China")
+    { allMenu += createObj(item)}
   })
   menuCardDOM.innerHTML = allMenu
 }
